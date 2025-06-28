@@ -1,10 +1,6 @@
 const fibonacci = function(num) {
-    if(typeof(num) != Number) {
-        try {
-            num = parseInt(num)
-        } catch(e) {
-            return "OOPS"
-        }
+    if(typeof(num) !== Number) {
+        num = parseInt(num);
     }
     if(num < 0) {
         return "OOPS";

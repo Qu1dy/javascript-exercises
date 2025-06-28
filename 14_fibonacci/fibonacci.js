@@ -1,4 +1,7 @@
 const fibonacci = function(num) {
+    if(typeof(num) == String || num < 0) {
+        return "OOPS";
+    }
     if(num < 2){
         return num;
     }
